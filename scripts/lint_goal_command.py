@@ -80,7 +80,7 @@ def lint_text(text: str, source: str) -> list[str]:
             errors.append(f"{source}: /goal outcome is too short to be actionable")
 
     verification = find_marker_content(text, REQUIRED_MARKER_GROUPS[1][1])
-    if verification and not any(re.search(pattern, verification, flags=re.IGNORECASE) for pattern in VERIFICATION_EVIDENCE_PATTERNS):
+    if verification and (len(verification) < 12 or not any(re.search(pattern, verification, flags=re.IGNORECASE) for pattern in VERIFICATION_EVIDENCE_PATTERNS)):
         errors.append(f"{source}: verification should name concrete evidence such as commands, logs, screenshots, files, APIs, browser/simulator checks, or artifacts")
 
     for name, patterns in REQUIRED_MARKER_GROUPS[1:]:
