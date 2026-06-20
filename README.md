@@ -275,3 +275,11 @@ Author:
 Copyright (c) 向阳乔木  
 X: https://x.com/vista8  
 GitHub: https://github.com/joeseesun/
+
+## Contribuciones
+
+Contributions are welcome! If you have suggestions for improvements or want to report issues, please open an issue or submit a pull request. Make sure to follow the contribution guidelines if they are available.
+
+## Licencia
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
